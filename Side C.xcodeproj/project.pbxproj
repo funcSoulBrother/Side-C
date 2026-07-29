@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		294D81062FB7CF3D00AB0584 /* SwipeActions in Frameworks */ = {isa = PBXBuildFile; productRef = 294D81052FB7CF3D00AB0584 /* SwipeActions */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		29D4C59A2F832DBF00B0CA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294D81062FB7CF3D00AB0584 /* SwipeActions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294D81042FB7CF3D00AB0584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29D4C5832F832DBE00B0CA29 = {
 			isa = PBXGroup;
 			children = (
 				29D4C58E2F832DBE00B0CA29 /* Side C */,
 				29D4C59C2F832DBF00B0CA29 /* Side CTests */,
 				29D4C5A62F832DBF00B0CA29 /* Side CUITests */,
+				294D81042FB7CF3D00AB0584 /* Frameworks */,
 				29D4C58D2F832DBE00B0CA29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = "Side C";
 			packageProductDependencies = (
+				294D81052FB7CF3D00AB0584 /* SwipeActions */,
 			);
 			productName = "Side C";
 			productReference = 29D4C58C2F832DBE00B0CA29 /* Side C.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 29D4C5832F832DBE00B0CA29;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				294D81032FB7BD9E00AB0584 /* XCRemoteSwiftPackageReference "SwipeActions" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 29D4C58D2F832DBE00B0CA29 /* Products */;
 			projectDirPath = "";
@@ -400,6 +417,7 @@
 				DEVELOPMENT_TEAM = ZR6QK73PFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses your music library to create special playlists.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +450,7 @@
 				DEVELOPMENT_TEAM = ZR6QK73PFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses your music library to create special playlists.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		294D81032FB7BD9E00AB0584 /* XCRemoteSwiftPackageReference "SwipeActions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/SwipeActions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		294D81052FB7CF3D00AB0584 /* SwipeActions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 294D81032FB7BD9E00AB0584 /* XCRemoteSwiftPackageReference "SwipeActions" */;
+			productName = SwipeActions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29D4C5842F832DBE00B0CA29 /* Project object */;
 }
