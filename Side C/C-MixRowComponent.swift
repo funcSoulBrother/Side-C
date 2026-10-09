@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct CMixRow: View {
-    var mix: CMix
+    var cMix: CMix
+    @Bindable var viewModel: NowPlayingViewModel
+    let musicPlayer: MusicPlayer
     
     var body: some View {
         NavigationLink {
 //                                    CMixDetailView(mix: mix)
-            NowPlayingView(mix: mix)
+            NowPlayingView(cMix: cMix, viewModel: viewModel, musicPlayer: musicPlayer, shouldStartMix: true)
         } label: {
             HStack {
-                Text(mix.name)
+                Text(cMix.name)
                     .font(.title2)
                 Spacer()
                 Image(systemName: "play.circle")

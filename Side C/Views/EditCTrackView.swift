@@ -50,6 +50,7 @@ struct EditCTrackView: View {
                             Text(song.artist ?? "Unknown Artist")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
+                                .readableText(on: backgroundColorHex)
                         }
                     }
                     NavigationLink {

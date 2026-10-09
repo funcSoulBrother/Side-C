@@ -33,9 +33,30 @@
 		29D4C5A32F832DBF00B0CA29 /* Side CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		29A30A8D3062306C00AD6B27 /* Exceptions for "Side C" folder in "Side CTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"PermanentMarker-Regular.ttf",
+			);
+			target = 29D4C5982F832DBF00B0CA29 /* Side CTests */;
+		};
+		29A30A8E3062306C00AD6B27 /* Exceptions for "Side C" folder in "Side CUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"PermanentMarker-Regular.ttf",
+			);
+			target = 29D4C5A22F832DBF00B0CA29 /* Side CUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		29D4C58E2F832DBE00B0CA29 /* Side C */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				29A30A8D3062306C00AD6B27 /* Exceptions for "Side C" folder in "Side CTests" target */,
+				29A30A8E3062306C00AD6B27 /* Exceptions for "Side C" folder in "Side CUITests" target */,
+			);
 			path = "Side C";
 			sourceTree = "<group>";
 		};
@@ -417,6 +438,7 @@
 				DEVELOPMENT_TEAM = ZR6QK73PFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Side-C-Info.plist";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses your music library to create special playlists.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +472,7 @@
 				DEVELOPMENT_TEAM = ZR6QK73PFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Side-C-Info.plist";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses your music library to create special playlists.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

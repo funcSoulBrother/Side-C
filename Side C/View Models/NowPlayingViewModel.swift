@@ -14,3 +14,5 @@ class NowPlayingViewModel {
     var currentSong: MPMediaItem?
     var isPlaying = false
 }
+
+
